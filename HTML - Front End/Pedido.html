@@ -1,0 +1,118 @@
+<HTML lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cakemaniac</title>
+    </head>
+    <body bgcolor="f7dcf2">
+        <header>
+            <center>
+                <a href="Inicio.html"><img src="LogoCakeNation.png" width="300px"></a>
+                <h1>The Cake Nation</h1>
+                <h4>Av. de las harinas #4567 Col. Reposteros</h4>
+                <h4>Tel. (686) 678-9024</h4>
+            </center>
+            <hr>
+            <nav>
+                <ol>
+                    <h3>
+                    <a href="inicio.html"><li>Inicio</li></a>
+                    <a href="pedido.html"><li>Pedido</li></a>
+                    <a href="inventario.html"><li>Inventario</li></a>
+                    <a href="pedidosASurtir.html"><li>Administración</li></a>
+                    </h3>
+                </ol>
+            </nav>
+            <hr>
+        </header>
+        <section>
+            <center><h2>Captura de Pedido</h2></center>
+            <form action="/accion.js" id="pedido" method="post">
+                <h4>Datos Generales</h4>
+                <table>
+                    <tr>
+                        <td width="120" align="right"><label for="nombre">Nombre:</label></td>
+                        <td span="20"><input type="text" id="nombre" name="nombre"></td>
+                    </tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr>
+                        <td width="120" align="right"><label for="telefono">Telefono:</label></td>
+                        <td><input type="text" id="telefono" name="telefono"></td>
+                    </tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr>
+                        <td width="120" align="right"><label for="domicilio">Domicilio:</label></td>
+                        <td><input type="text" id="domicilio" name="domicilio"></td>
+                    </tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr>
+                        <td width="120" align="right"><label for="email">Correo Electrónico:</label></td>
+                        <td><input type="text" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td width="120" align="right"><label for="email">Descripción del Pastel:</label></td>
+                        <td><textarea id="email" name="email" cols="75" rows="5"></textarea></td>
+                    </tr>
+                </table>
+                <h4>Elije tu Sabor de Pastel</h4>
+                <table>
+                    <tr>
+                        <td width="150">
+                            <input type="checkbox" id="saborPastel1" name="saborPastel1" value="vainilla">
+                            <label for="saborPastel1">Vainilla</label><br><br>
+                            <input type="checkbox" id="saborPastel2" name="saborPastel2" value="chocolate">
+                            <label for="saborPastel2">Chocolate</label><br><br>
+                            <input type="checkbox" id="saborPastel3" name="saborPastel3" value="fresa">
+                            <label for="saborPastel3">Fresa</label><br><br>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="saborPastel4" name="saborPastel4" value="platano">
+                            <label for="saborPastel4">platano</label><br><br>
+                            <input type="checkbox" id="saborPastel5" name="saborPastel5" value="coco">
+                            <label for="saborPastel5">Coco</label><br><br>
+                            <input type="checkbox" id="saborPastel6" name="saborPastel6" value="cafe">
+                            <label for="saborPastel6">Café</label><br><br>
+                        </td>
+                    </tr>
+                </table>
+                <h4>Elije tu Cubierta</h4>
+                <table>
+                    <tr>
+                        <td width="120" align="right"><label for="refresco">Cubierta:</label></td>
+                        <td><input list="refresco">
+                            <datalist id="refresco">
+                                <option value="Buttercream">
+                                <option value="Chantilly">
+                                <option value="Fondant">
+                                <option value="Frosting">
+                            </datalist></td>
+                    </tr>
+                </table>
+                <h4>Elije tu Decoracion</h4>
+                <table>
+                    <tr>
+                        <td width="150">
+                            <input type="checkbox" id="decoracion1" name="decoracion1" value="drip">
+                            <label for="decoracion1">Drip Cake</label><br><br>
+                            <input type="checkbox" id="decoracion2" name="decoracion2" value="surprise">
+                            <label for="decoracion2">Surprise Cake</label><br><br>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="decoracion3" name="decoracion3" value="piña">
+                            <label for="decoracion3">Figuras Fondant</label><br><br>
+                            <input type="checkbox" id="decoracion4" name="decoracion4" value="coco">
+                            <label for="decoracion4">Impresion Comestible</label><br><br>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <input type="submit" value="Enviar Pedido">
+                <input type="reset" value="Limpiar Captura">
+                <br><br>
+            </form>
+        </section>
+    </body>
+</HTML>
+
+
